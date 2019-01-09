@@ -1,0 +1,31 @@
+.img {
+    width:40%;
+    padding: 50px;
+}
+.first {
+    padding-left: 50px;
+    width: 25%;
+    float:left;
+}
+.second {
+    padding-top:50px;
+    padding-right: 70px;
+    width: 65%;
+    float:right;
+}
+
+.info {
+    color: rgb(102, 255, 0);
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: rgb(216, 127, 10);
+}
+
+.name {
+    text-decoration: underline;
+    text-decoration: aqua;
+}

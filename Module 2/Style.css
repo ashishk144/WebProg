@@ -1,31 +1,36 @@
 .img {
-    height: 150%;
-    width:70%;
+    width:80%;
+    height: 400px;
     padding-top:80px;
     padding-bottom: 50px;
 }
 .first {
-    padding-left: 100px;
+    border:solid;
+    margin: 30px;
+    padding-left: 70px;
+    padding-bottom: 185px;
+    padding-right:30px;
     width: 25%;
     float:left;
 }
 .second { 
     border: solid;
     padding-top:50px;
-    padding-left: 70px;
+    padding-left: 50px;
+    padding-bottom: 200px;
     width: 60%;
     float:right;
 }
 
 .info {
-    color: rgb(102, 255, 0);
+    color: rgb(42, 71, 23);
     text-align: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    background: rgb(216, 127, 10);
+    background: rgb(178, 158, 138);
 }
 
 .name {

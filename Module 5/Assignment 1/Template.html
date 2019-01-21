@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = 'utf-8'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <title>Page</title>
+    </head>
+    <body>
+        <div class = 'container' style = "border:cadetblue solid 3px">
+                <div class = 'row' style = "margin:20px">
+                    <h2>Learn by doing</h2>
+                </div>
+            <div class = "container" style = "border:solid rgb(27, 144, 253) 2px">
+                <br>
+                <div>
+                    <h1 id = "result" style = "text-align: center"></h1>
+                </div>
+                <div id = result1>
+                    <div class = "row">
+                        <div class = "col-8">
+                        <p id='question'></p>
+                        </div>
+                        <div class = "col">
+                            <button type="button" class="btn btn-primary btn-md" onclick="hint()">Hint</button>
+                            <div id = "hint"></div>
+                        </div>
+                    </div>
+                    <div id = "cho1" class = "row" style = "padding-left: 20px" >
+                    </div>
+                    <div id = "cho2" class="row" style = "padding-left: 20px" style = "padding-bottom: 10px">
+                    </div>
+                    <div id = "correct"></div>
+                    <div id = "wrong"></div>
+                    <div class = "row">
+                        <div class="col-8">
+                        </div>
+                        <div class="col">
+                            <input id = "next" type="button" class="btn btn-info" value="Next" onclick="next()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = 'container'>
+                <div class = 'row' style = "padding-top: 20px">
+                    <div class = "col-9">
+                    </div>
+                    <div class = "col">
+                        <input type="button" class="btn btn-info" value="Reset the activity" onclick="reset()">
+                    </div>
+                </div>
+            </div>
+            <script src="Quiz.js"></script>
+    </body>
+</html>

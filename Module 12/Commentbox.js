@@ -37,6 +37,7 @@ function validate() {
 function loader() {
     document.getElementById("validate").innerHTML = '';
     document.getElementById("noname").innerHTML = '';
+    document.getElementById("nopwd").innerHTML = '';
     document.getElementById("usr").value = '';
     document.getElementById("pwd").value = '';
     document.getElementById("comment").value = '';

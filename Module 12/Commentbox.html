@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = 'utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <title>CommentBox</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class = "jumbotron" style = "text-align: center">
+                <h1>Welcome to the CommentBox!</h1>
+            </div>
+            <form>
+                <div class = "col-4">
+                    <div class="form-group">
+                    <label for="usr">Name:</label>
+                    <input type="text" class="form-control" id="usr" onclick=checkname()>
+                        <div id = "noname">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" onclick=checkpwd()>
+                        <div id ="nopwd"></div>
+                    </div>
+                </div>
+                <div class="form-group; col-12">
+                    <label for="comment">Comment:</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+            </form>
+            <br>
+                <div class="col-9">
+                </div>
+                <div class="col-3">
+                    <input type="button" class="btn-default" value="Post Comment" onclick=validate()>
+                    <div id="validate"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id = "allcomments"></div>
+        </div>
+    </body>
+    <script src = 'CommentBox.js'></script>
+</html>

@@ -27,17 +27,15 @@ function validate() {
         ind++;
         all[ind] = comnt;
         names[ind] = usr;
-        loader();
-    } else {
+        setTimeout(loader, 1000);
+        } else {
         document.getElementById("validate").innerHTML = '<p class="alert alert-danger"> Invalid submission! </p>';
         setTimeout(loader, 1000);
-        // loader();
     }
 }
 
 function loader() {
     document.getElementById("validate").innerHTML = '';
-    document.getElementById("noname").innerHTML = '';
     document.getElementById("noname").innerHTML = '';
     document.getElementById("usr").value = '';
     document.getElementById("pwd").value = '';

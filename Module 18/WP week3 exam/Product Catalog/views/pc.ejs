@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Product Catalog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="/assets/todo-list.js"></script>
+        <link rel = "stylesheet" href="/assets/Styles.css"></link>
+    </head>
+    <body>
+        <h1>Product Catalog</h1>            
+        <div class = "container">
+            <table class = "table">
+                <thead>
+                    <tr>
+                        <th scope="col">SNo.</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Display Information</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <% for(var i = 0; i < list.products.length; i++) { %>
+                    <tr>
+                        <th scope="row"><%= i+1 %></th>
+                        <td><%= list.products[i].title %></td>
+                        <td><%= list.products[i].description %></td>
+                        <td><img class="img" src = "/assets/<%= list.products[i].image %>"></td>
+                        <td><%= list.products[i].quantity %></td>
+                        <td>
+                            <form id = "group">
+                                <input id="title" type="text" name="title" placeholder="Edit Title"/>
+                                <input id="display" type="text" name="display" placeholder="Edit Display"/>
+                                <input id="quantity" type="text" name="quantity" placeholder="Edit Quantity"/>
+                                <button type="submit" name="<%= list.products[i]%>">Edit</button>
+                            </form>
+                        </td>
+                        <td><button type="click" name="<%= list.products[i].title %>">Delete</button></td>
+                    </tr>
+                <% } %>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

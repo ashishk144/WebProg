@@ -1,0 +1,63 @@
+<div class="nav-top">
+  <nav class="navbar navbar-default"> 
+  </nav>
+   <div class="cart">
+      <span routerLink = "/cart" class="fa fa-shopping-cart my-cart-icon" style="position: absolute; background-color: inherit; z-index: 999;"><span class="badge badge-notify my-cart-badge">
+          <a routerLink = "/cart">{{len}}</a>
+      </span></span>
+  </div>
+  <div class="clearfix"></div>
+</div>
+<div class="banner-top">
+    <div class="search-form">
+      <form class = "example" action="#" method="post">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </form>
+    </div>
+</div>
+<div class="content-top">
+  <div class="spec ">
+    <div class="ser-t">
+      <b></b>
+      <span><i></i></span>
+      <b class="line"></b>
+    </div>
+  </div>
+  <div class="tab-head">
+    <div class="tab-content tab-content-t">
+      <div class="tab-pane active text-style" id = "tab1">
+        <div class="com-w31">
+          <div *ngFor="let in of tem,index as i" class="col-md-3 m-wthree">
+            <div class="col-m">
+                <a routerLink = "/productdetails" data-toggle="modal" data-target="#myModal1" class="offer-img">
+                  <img routerLink = "/productdetails/{{i}}" src="assets/1.jpeg" class="img-responsive" alt="" style = "height: 100px;width: 100px">
+                </a>
+              <div class="mid-1">
+                <div class="women">
+                  <h6>{{in.name}}</h6>							
+                </div>
+                <div class="mid-2">
+                  <b><i class="fa fa-inr" style="font-size:13px"></i>&nbsp;{{in.price}}</b>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="add">
+                    <button (click) = "cart(in)" class="my-cart-btn my-cart-b ">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div *ngFor = "let prod of tem"> 
+  {{prod.name}}
+  {{prod.price}}
+  {{prod.quantity}}
+  <div *ngFor = "let rev of prod.reviews">
+    {{rev.body}}
+    {{rev.rating}}
+  </div>
+</div> -->

@@ -1,0 +1,32 @@
+<div class="header">
+    <div class="container">
+        <div class="logo">
+            <h1><a routerLink = "/main"><b>T<br>H<br>E</b>&nbsp;Vethukondi Konukondi<span>Anni Mi Andubatullo</span></a></h1>
+        </div>
+        <div class="head-t">
+            <ul class="card">
+                <div *ngIf = "!login">
+                <li><a routerLink = "/login"><i class="glyphicon glyphicon-user" aria-hidden="true"></i>Login</a></li>
+                <li><a routerLink = "/register"><i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i>Register</a></li>
+            </div>
+            <div *ngIf = "login">
+                <li><a routerLink = "/userdetails"><i class="glyphicon glyphicon-user" aria-hidden="true"></i>User Details</a></li>
+            </div>
+            </ul>	
+        </div>
+        <!-- <div class="nav-top">
+            <nav class="navbar navbar-default"> 
+            </nav>
+             <div class="cart">
+                <span routerLink = "/cart" class="fa fa-shopping-cart my-cart-icon" style="position: absolute; background-color: inherit; z-index: 999;"><span class="badge badge-notify my-cart-badge">
+                    <a routerLink = "/cart">{{len}}</a>
+                </span></span>
+            </div>
+            <div class="clearfix"></div>
+        </div> -->
+    </div>       			
+</div>
+<!-- <app-login></app-login>
+<app-register></app-register> -->
+<!-- <app-main></app-main> -->
+<router-outlet></router-outlet>
